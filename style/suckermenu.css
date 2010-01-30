@@ -1,0 +1,85 @@
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.suckertreemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.suckertreemenu ul li{
+position: relative;
+display: inline;
+float: left;
+background-color: #CECE9C; /*overall menu background color*/
+}
+
+/*Top level menu link items style*/
+.suckertreemenu ul li a{
+display: block;
+width: 90px; /*Width of top level menu link items*/
+padding: 1px 8px;
+border: 1px solid #336699;
+border-left-width: 0;
+text-decoration: none;
+color: black;
+}
+	
+/*1st sub level menu*/
+.suckertreemenu ul li ul{
+left: 0;
+position: absolute;
+top: 1em; /* no need to change, as true value set by script */
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.suckertreemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.suckertreemenu ul li ul li ul{ 
+left: 159px; /* no need to change, as true value set by script */
+top: 0;
+}
+
+/* Sub level menu links style */
+.suckertreemenu ul li ul li a{
+	display: block;
+	width: 150px; /*width of sub menu levels*/
+	color: black;
+	text-decoration: none;
+	padding: 1px 5px;
+	border: 1px solid #336699;
+	text-align: left;
+}
+
+.suckertreemenu ul li a:hover{
+background-color: #591711;
+color: white;
+}
+
+/*Background image for top level menu list links */
+.suckertreemenu .mainfoldericon{
+	background: #CECE9C url(/Common/images/menuarodwn8_nrm_1.gif) no-repeat center right;
+}
+
+/*Background image for subsequent level menu list links */
+.suckertreemenu .subfoldericon{
+background: #CECE9C url(/Common/images/menuarodwn8_dim_1.gif) no-repeat center right;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .suckertreemenu ul li { float: left; height: 1%; }
+* html .suckertreemenu ul li a { height: 1%; }
+/* End */
+
+

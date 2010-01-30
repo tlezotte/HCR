@@ -1,0 +1,30 @@
+<?php
+$menu1 = $default['url_home'] . "/Employees/index.php";
+$menu1_image = ($_SERVER['REQUEST_URI'] == $menu1) ? team_a : team;
+$menu1_image_url = $default['url_home'] . "/images/". $menu1_image . ".gif";
+
+$menu2 = $default['url_home'] . "/Calendar/index.php";
+$menu2_image = ($_SERVER['REQUEST_URI'] == $menu2) ? calendar_a : calendar;
+$menu2_image_url = "/Common/images/". $menu2_image . ".gif";
+?>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+<table cellspacing="0" cellpadding="0" summary="" border="0">
+<tr>
+<?php if ($_SESSION['hcr_groups'] == 'ex' OR $_SESSION['hcr_groups'] == 'hr') { ?>
+  <td><a href="<?= $menu1; ?>" <?php help('', 'Cadence Innovation Employee List', 'default'); ?>><img src="<?= $menu1_image_url; ?>" width="16" height="18" border="0"></a></td> 
+  <td><img src="/Common/images/spacer.gif" width="15" height="18" /></td>  
+  <td><a href="<?= $menu2; ?>" <?php help('', 'Cadence Innovation Start Date Calendar', 'default'); ?>><img src="<?= $menu2_image_url; ?>" width="18" height="18" border="0"></a></td>  
+  <td><img src="/Common/images/spacer.gif" width="15" height="18" /></td> 
+<?php } ?> 
+  <td><a href="javascript:void(0);" onClick="MM_openBrWindow('../Help/index.php','help','scrollbars=yes,resizable=yes,width=800,height=800')"><img src="../images/help.gif" width="18" height="18" border="0" align="absmiddle"></a></td>
+  <td class="DarkHeaderSubSub">&nbsp;<a href="javascript:void(0);" onClick="MM_openBrWindow('../Help/index.php','help','scrollbars=yes,resizable=yes,width=800,height=800')" class="dark">Help</a></td>
+</tr>
+</table>

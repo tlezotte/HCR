@@ -1,0 +1,55 @@
+<?php
+/**
+ * Request System
+ *
+ * detail.php displays detailed information on PO.
+ *
+ * @version 1.5
+ * @link https://hr.yourcompany.com/go/HCR/
+ * @author	Thomas LeZotte (tom@lezotte.net)
+ *
+ * @package PO
+ * @filesource
+ */
+
+
+/**
+ * - Database Connection
+ */
+require_once('../Connections/connDB.php');
+/**
+ * - Config Information
+ */
+require_once('../include/config.php'); 
+/**
+ * - Check User Access
+ */
+require_once('../security/check_user.php');
+
+
+if ($_GET['t'] == "employees") {
+	$q = $_GET['q'];
+	$v = ($_GET['v'] != 'all') ? "AND e.status='0'" : $blank;						// Show all employees
+	$l = ($_GET['l'] == 'on') ? "INNER JOIN Users u ON u.eid=e.eid" : $blank;		// Local (Application) users
+	$query="SELECT * 
+		    FROM Standards.Employees e
+			$l
+		    WHERE e.lst REGEXP '$q' OR e.eid REGEXP '$q'
+			$v
+		    ORDER BY e.lst";
+	$result=mysql_query($query);
+	$num=mysql_numrows($result);
+	mysql_close();
+	
+	$i = 0;
+	while ($i < $num) {
+		$lst = mysql_result($result, $i, "lst");
+		$fst = mysql_result($result, $i, "fst");
+		$mdl = mysql_result($result, $i, "mdl");
+		$eid = mysql_result($result, $i, "eid");
+		$name = caps($fst." ".$lst);
+		
+		echo $name . "|" . $eid . "\n";
+		$i++;
+	}
+}

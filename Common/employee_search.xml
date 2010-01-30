@@ -1,0 +1,10 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Employee Search</ShortName>
+<Description>Cadence Employee Search</Description>
+<Tags>eid</Tags>
+<Image height="16" width="16" type="image/x-icon">http://a2.cadenceinnovation.com/favicon.ico</Image>
+<Url type="text/html" method="GET" template="https://hr.cadenceinnovation.com/go/HCR/Employees/index.php?query={searchTerms}"/>
+<InputEncoding>UTF-8</InputEncoding>
+<AdultContent>false</AdultContent>
+</OpenSearchDescription>

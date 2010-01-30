@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: #ffffff;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+}
+#topbar{
+	width: 240px;
+	margin-left: auto; /*turn off*/
+	margin-right:35px;
+	position:relative; /*turn off*/
+	margin-top:-50px;
+	/*margin-left:715px;*/  /*turn off*/
+	/*border: 1px solid black;
+	padding: 2px;
+	background-color: lightyellow;
+	width: 620px;*/
+	visibility: hidden;
+	z-index: 10;
+}
+#boxshot {
+	border: 2px solid #818156;
+	background-image:url('/Common/images/portraits/default.jpg');
+	margin-bottom: 2px;
+	height: 236px;
+	width: 236px;
+	background-repeat: no-repeat;
+	background-position: center center;
+ }
+ #employees th.selected {	color: #EAEAEA; }
+ #employees tr.selected {
+	color:#FFFFFF;
+	background-color: #336699;
+ }
+ #employees { 
+	margin-top:0px;
+	margin-bottom:50px;
+  }
+#content {
+	width: auto;
+	/*margin-top:-30px;*/  /*turn off*/
+	/*float: left;*/ /*turn off*/
+	/*	margin-right: 15px;
+	padding-top: 5px;*/
+}	 
+ #searchBar {
+/*		width: 600px;*/
+	/*margin-left: 50px;*/
+	/*float: left;*/
+	background-color:#FCF7CD;
+	padding:5px;
+	/*margin-top:3px;*/
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #999999;
+	border-bottom-color: #999999;
+ }
+ #searchBarContainer {
+	margin-left:25px;
+	margin-top:12px;
+	float:left;
+ }
+ #searchBar #eidFilter, #fstFilter, #lstFilter, #deptFilter, #locationFilter {
+	font-size: 85%;
+	color: #000000;
+	border: 1px solid #000000;
+	background-color:#DFDFBF;
+	padding-right: 5px;
+	padding-left: 5px;
+ }

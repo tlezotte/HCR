@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://intranet.cadenceinnovation.com" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Cadence Innovation - HCR</title>
+ <link>http://intranet.cadenceinnovation.com/?q=taxonomy/term/28/0</link>
+ <description>Stories related to the Human Capital Request System.</description>
+ <language>en</language>
+<item>
+ <title>Chat with the developer</title>
+ <link>http://intranet.cadenceinnovation.com/?q=node/56</link>
+ <description>&lt;p&gt;&lt;strong&gt;Human Resources Only&lt;/strong&gt;&lt;br /&gt;
+Every page now contains a new chat link that will allow you to chat with me live.  Click the link labeled &lt;strong&gt;Cadence Chat&lt;/strong&gt; at the bottom of the page.  A window will pop up and allow you to chat if I&#039;m online or leave a message if offline.&lt;/p&gt;
+&lt;p&gt;When using the chat application can you first let me know who I&#039;m talking to and the application in question.&lt;/p&gt;
+</description>
+ <comments>http://intranet.cadenceinnovation.com/?q=node/56#comments</comments>
+ <category domain="http://intranet.cadenceinnovation.com/?q=HCR">HCR</category>
+ <pubDate>Tue, 27 Feb 2007 20:36:20 +0000</pubDate>
+ <dc:creator>Tom LeZotte</dc:creator>
+ <guid isPermaLink="false">56 at http://intranet.cadenceinnovation.com</guid>
+</item>
+</channel>
+</rss>

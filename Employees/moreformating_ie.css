@@ -1,0 +1,35 @@
+/*#floatingFooter {
+	width:95%;
+	background-color:none;
+	border: none;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:grey;
+	position:relative;
+}*/
+#floatingFooter {
+	width:100%;
+	background-color:#DFDFBF;
+	font-size:0.8em;
+	margin-bottom:0px;
+	position:relative;
+	color:#333333;
+	text-align:left;
+	padding-left:10px;
+	z-index:10;
+	border-top-width: 1px;
+	border-bottom-width: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000000;
+	border-bottom-color: #336699;
+	filter:alpha(opacity=90);
+	-moz-opacity:.90;
+	opacity:.90;
+}
+#floatingFooter a {
+	color:#006600;
+}
+#floatingFooter a:hover {
+	color:#009900;
+}

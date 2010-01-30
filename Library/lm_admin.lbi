@@ -1,0 +1,40 @@
+<?php if ($_SESSION['hcr_access'] == 0) { ?>
+<table cellspacing="0" cellpadding="0" summary="" border="0">
+	<tr>
+	  <td><img src="../images/t.gif" width="200" height="5" border="0"></td>
+    </tr>
+</table>
+<?php } else { ?>
+<?php
+$menu1 = $default['url_home'] . "/Administration/utilities.php";
+$menu1_css = ($_SERVER['REQUEST_URI'] == $menu1) ? on : off;
+
+$menu2 = $default['url_home'] . "/Administration/db/index.php";
+$menu2_css = (preg_match("/db/", $_SERVER['REQUEST_URI'])) ? on : off;
+
+$menu3 = $default['url_home'] . "/Administration/settings.php";
+$menu3_css = ($_SERVER['REQUEST_URI'] == $menu3) ? on : off;
+
+$menu4 = $default['url_home'] . "/Administration/users.php";
+$menu4_css = ($_SERVER['REQUEST_URI'] == $menu4) ? on : off;
+?>
+
+<table cellspacing="0" cellpadding="0" summary="" border="0">
+  <tr>
+	<td>&nbsp;</td>
+	<td><table cellspacing="0" cellpadding="0" summary="" border="0">
+		<tr>
+		  <td nowrap><a href="<?= $menu4; ?>" class="<?= $menu4_css; ?>"> Users </a></td>
+		  <td width="20" valign="middle" nowrap><div align="center"><img src="../images/Dot.gif" width="10" height="10"></div></td>
+		  <td nowrap><a href="<?= $menu3; ?>" class="<?= $menu3_css; ?>"> Settings </a></td>	
+		  <td width="20" valign="middle" nowrap><div align="center"><img src="../images/Dot.gif" width="10" height="10"></div></td>
+		  <td nowrap><a href="<?= $menu2; ?>" class="<?= $menu2_css; ?>"> Databases </a></td>			  					  
+		  <td width="20" valign="middle" nowrap><div align="center"><img src="../images/Dot.gif" width="10" height="10"></div></td>
+		  <td nowrap><a href="<?= $menu1; ?>" class="<?= $menu1_css; ?>"> Utilities </a></td>			  			  
+		  <td nowrap>&nbsp;</td>
+		</tr>
+	</table></td>
+	<td>&nbsp;</td>
+  </tr>
+</table>
+<?php } ?>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site>
+<localinfo sitename="HCR" ftporrdsserver="FALSE" localroot="C:\Development\Projects\php\HCR\" assetfolder="C:\Development\Projects\php\HCR\SpryAssets\" imagefolder="" spacerfilepath="" refreshlocal="FALSE" autouploadfiles="FALSE" maintainsyncinfo="TRUE" rewritedocrellinks="FALSE" cache="TRUE" httpaddress="https://hr.cadenceinnovation.com/go/HCR/" relativeTo="DOCUMENT" caseSensitiveLinks="FALSE" curserver="webserver"/>
+<remoteinfo accesstype="ftp" host="a2.cadenceinnovation.com" remoteroot="go/HCR/" user="www2" pw="686474343638" checkoutname="" emailaddress="" enablecheckin="FALSE" checkoutwhenopen="TRUE" usefirewall="FALSE" usepasv="FALSE" useSFTP="TRUE" useIpv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="Windows-1252"/>
+<designnotes usedesignnotes="FALSE" sharedesignnotes="FALSE"/>
+<sitemap homepage="" pagesperrow="200" columnwidth="125" showdependentfiles="FALSE" showpagetitles="FALSE" showhiddenfiles="FALSE"/>
+<fileviewcolumns sharecolumns="FALSE">
+    <column name="Local Files" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="80" remotewidth="180" />
+    <column name="Notes" align="center" show="FALSE" share="FALSE" builtin="TRUE" localwidth="36" remotewidth="36" />
+    <column name="Size" align="right" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-2" remotewidth="-2" />
+    <column name="Type" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="60" remotewidth="60" />
+    <column name="Modified" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="102" remotewidth="102" />
+    <column name="Checked Out By" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="-1" />
+</fileviewcolumns>
+<appserverinfo servermodel="" urlprefix="https://hr.cadenceinnovationl.com/go/HCR/" connectionsmigrated="FALSE" serverobjectsversion="1" defaultdoctype="HTML" accesstype="ftp" host="a2.cadenceinnovation.com" remoteroot="go/Request/" user="www2" pw="686474343638" usefirewall="FALSE" usepasv="FALSE" useSFTP="TRUE" useIPv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" testsvrbinaccesstype="ftp" testsvrbinhost="a2.cadenceinnovation.com" testsvrbinremoteroot="go/Request/" user="www2" pw="686474343638" usefirewall="FALSE" usepasv="FALSE" useSFTP="TRUE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="Windows-1252" testsvrbinaccesstype="ftp" testsvrbinhost="a2.cadenceinnovation.com" testsvrbinremoteroot="go/Request/" testsvrbinuser="" testsvrbinpw="" testsvrbinusefirewall="FALSE" testsvrbinusepasv="FALSE" testsvrbinuseSFTP="FALSE" testsvrbinuseIPv6="FALSE" testsvrbinuseftpoptimization="TRUE" testsvrbinusealternaterename="FALSE" testsvrbinpathNameCharacterSet="Windows-1252"/>
+<cloaking enabled="TRUE" patterns="TRUE">
+    <cloakedfolder folder="login/"/>
+    <cloakedfolder folder="upload/"/>
+    <cloakedfolder folder="CER/files/"/>
+    <cloakedfolder folder="PO/files/"/>
+    <cloakedfolder folder="workfiles/"/>
+    <cloakedfolder folder="POold/"/>
+    <cloakedfolder folder="CVS/"/>
+    <cloakedfolder folder="administration/CVS/"/>
+    <cloakedfolder folder="cer/CVS/"/>
+    <cloakedfolder folder="connections/CVS/"/>
+    <cloakedfolder folder="cron/CVS/"/>
+    <cloakedfolder folder="help/administration/CVS/"/>
+    <cloakedfolder folder="help/cer/CVS/"/>
+    <cloakedfolder folder="help/CVS/"/>
+    <cloakedfolder folder="help/po/CVS/"/>
+    <cloakedfolder folder="help/rss/CVS/"/>
+    <cloakedfolder folder="images/CVS/"/>
+    <cloakedfolder folder="library/CVS/"/>
+    <cloakedfolder folder="po/CVS/"/>
+    <cloakedfolder folder="scripts/CVS/"/>
+    <cloakedfolder folder="security/CVS/"/>
+    <cloakedfolder folder="templates/CVS/"/>
+    <cloakedfolder folder="Administration/CVS/"/>
+    <cloakedfolder folder="CER/CVS/"/>
+    <cloakedfolder folder="Connections/CVS/"/>
+    <cloakedfolder folder="Help/administration/CVS/"/>
+    <cloakedfolder folder="Help/cer/CVS/"/>
+    <cloakedfolder folder="Help/CVS/"/>
+    <cloakedfolder folder="Help/po/CVS/"/>
+    <cloakedfolder folder="Help/rss/CVS/"/>
+    <cloakedfolder folder="Library/CVS/"/>
+    <cloakedfolder folder="PO/CVS/"/>
+    <cloakedfolder folder="Templates/CVS/"/>
+    <cloakedfolder folder="Help/Administration/CVS/"/>
+    <cloakedfolder folder="Help/CER/CVS/"/>
+    <cloakedfolder folder="Help/PO/CVS/"/>
+    <cloakedfolder folder="Help/RSS/CVS/"/>
+    <cloakedfolder folder="preview/"/>
+    <cloakedfolder folder="_setup/"/>
+    <cloakedfolder folder="docs/"/>
+    <cloakedfolder folder="Calendar/tmp/"/>
+    <cloakedfolder folder="Administration/db/CVS/"/>
+    <cloakedfolder folder="Administration/files/CVS/"/>
+    <cloakedfolder folder="Administration/include/CVS/"/>
+    <cloakedfolder folder="BlackBerry/CVS/"/>
+    <cloakedfolder folder="BlackBerry/Administration/CVS/"/>
+    <cloakedfolder folder="BlackBerry/CER/CVS/"/>
+    <cloakedfolder folder="BlackBerry/PO/CVS/"/>
+    <cloakedfolder folder="Calendar/CVS/"/>
+    <cloakedfolder folder="Calendar/admin/CVS/"/>
+    <cloakedfolder folder="Calendar/calendars/CVS/"/>
+    <cloakedfolder folder="Calendar/functions/CVS/"/>
+    <cloakedfolder folder="Calendar/images/CVS/"/>
+    <cloakedfolder folder="Calendar/includes/CVS/"/>
+    <cloakedfolder folder="Calendar/languages/CVS/"/>
+    <cloakedfolder folder="Calendar/rss/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/cadence/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/cadence/images/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/default/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/default/images/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/green/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/green/images/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/grey/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/grey/images/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/red/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/red/images/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/tan/CVS/"/>
+    <cloakedfolder folder="Calendar/templates/tan/images/CVS/"/>
+    <cloakedfolder folder="Common/CVS/"/>
+    <cloakedfolder folder="Employees/CVS/"/>
+    <cloakedfolder folder="images/Signatures/CVS/"/>
+    <cloakedfolder folder="include/CVS/"/>
+    <cloakedfolder folder="include/menu/CVS/"/>
+    <cloakedfolder folder="js/CVS/"/>
+    <cloakedfolder folder="Language/CVS/"/>
+    <cloakedfolder folder="Language/en/CVS/"/>
+    <cloakedfolder folder="Language/fr/CVS/"/>
+    <cloakedfolder folder="Requests/CVS/"/>
+    <cloakedfolder folder="Requests/Reports/CVS/"/>
+    <cloakedfolder folder="soap/CVS/"/>
+    <cloakedfolder folder="style/CVS/"/>
+    <cloakedfolder folder="proxy/"/>
+    <cloakedpattern pattern=".ste"/>
+    <cloakedpattern pattern=".db"/>
+    <cloakedpattern pattern=".cvsignore"/>
+    <cloakedpattern pattern=".sql"/>
+    <cloakedpattern pattern=".ics"/>
+</cloaking>
+<contributorintegration enabled="FALSE"/>
+</site>
